@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Survey Form </title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="style.css" />
+
+  </head>
+  <body>
+  
+    <div class="mobile">Enable Desktop View</div>
+    <div class="container">
+      <div class="banner">
+        <h1 style="color: white">Developers Survey Form</h1>
+        <span
+          ><img
+            src="https://i.postimg.cc/yYQ54x6f/completed-task.png"
+            alt=""
+            width="100px"
+          />
+        </span>
+      </div>
+      <form action="">
+        <!-- DEV DETAILS -->
+        <div class="developer-details">
+          <p class="title">Developer Details</p>
+          <div class="dev-detail1 flex">
+            <input type="text" placeholder="Enter Full Name" />
+            <input type="text" placeholder="Enter Country" />
+          </div>
+          <div class="dev-detail2 flex">
+            <input type="tel" maxlength="10" placeholder="Phone" />
+            <input type="email" placeholder="Email" />
+          </div>
+          <!-- GENDER -->
+          <div class="gender">
+            <span>Gender : </span>
+            <input type="radio" name="gender" id="male" />
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="female" />
+            <label for="female">Female</label>
+          </div>
+        </div>
+        <!-- TECH LIST -->
+        <div class="techs">
+          <p class="title">Technologies</p>
+          <div class="web-development">
+            <ul class="techs-list">
+              <div class="first-col">
+                <li>
+                  <input type="checkbox" id="html" />
+                  <label for="html">HTML</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="css" />
+                  <label for="css">CSS</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="javascript" />
+                  <label for="javascript">JavaScript</label>
+                </li>
+              </div>
+              <div class="second-col">
+                <li>
+                  <input type="checkbox" id="bootstrap" />
+                  <label for="bootstrap">Bootstrap</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="tailwind" />
+                  <label for="tailwind">Tailwind</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="sass" />
+                  <label for="sass">SASS/SCSS</label>
+                </li>
+              </div>
+              <div class="third-col">
+                <li>
+                  <input type="checkbox" id="reactjs" />
+                  <label for="reactjs">React JS</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="angular" />
+                  <label for="angular">Angular</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="vuejs" />
+                  <label for="vuejs">Vue Js</label>
+                </li>
+              </div>
+            </ul>
+          </div>
+        </div>
+
+        <!-- SURVEY QUESTIONS -->
+        <div class="survey">
+          <p class="title">Questions</p>
+          <div class="questions quesion-1">
+            <p>1. Which department do you work in?</p>
+            <input type="radio" id="q1-y" value="Department 1" name="q1" />
+            <label for="q1-y">Department 1 </label>
+            <input type="radio" id="q1-n" value="Department 2" name="q1" />
+            <label for="q1-n">Department 2</label>
+            <input type="radio" id="q1-n" value="Department 3" name="q1" />
+            <label for="q1-n">Department 3</label>
+            
+          </div>
+          <div class="questions quesion-2">
+            <p>
+              2. How comfortable did you feel asking questions during your internship?</p>
+            <input type="radio" id="q1-y" value="Extremely comfortable" name="q1" />
+            <label for="q1-y">Extremely comfortable </label>
+            <input type="radio" id="q1-n" value="Comfortable" name="q1" />
+            <label for="q1-n">Comfortable</label>
+            <input type="radio" id="q1-n" value="Not so comfortable" name="q1" />
+            <label for="q1-n">Not so comfortable</label>
+            <input type="radio" id="q1-n" value="Not at all comfortable" name="q1" />
+            <label for="q1-n">Not at all comfortable</label>
+          </div>
+          <div class="questions quesion-3">
+            <p>3. How much did you learn during your intership?</p>
+            <input type="radio" id="average" value="Average" name="q5" />
+            <label for="average">Average</label>
+
+            <input type="radio" id="a lot" value="A lot" name="q5" />
+            <label for="a lot">A lot</label>
+
+            <input type="radio" id="little amount" value="Little amount" name="q5" />
+            <label for="Little amount">Little amount</label>
+
+            <input type="radio" id="none" value="none" name="q5" />
+            <label for="none">none</label>
+          </div>
+          <div class="questions quesion-4">
+            <p>4. Have you used other conversational AI tools</p>
+            <input type="radio" id="q4-y" value="YES" name="q4" />
+            <label for="q4-y">Yes</label>
+            <input type="radio" id="q4-n" value="No" name="q4" />
+            <label for="q4-n">No</label>
+          </div>
+          <div class="questions quesion-5">
+            <p>4.How would you rate the working relationship you had with your supervisor? </p>
+            <input type="radio" id="average" value="Average" name="q5" />
+            <label for="average">Average</label>
+
+            <input type="radio" id="good" value="Good" name="q5" />
+            <label for="good">Good</label>
+
+            <input type="radio" id="verygood" value="Very Good" name="q5" />
+            <label for="verygood">Very Good</label>
+
+            <input type="radio" id="excellent" value="Excellent" name="q5" />
+            <label for="excellent">Excellent</label>
+          </div>
+        </div>
+        <div class="btns">
+          <button type="submit">Submit</button>
+          <button type="reset">Reset</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
